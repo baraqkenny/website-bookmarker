@@ -75,6 +75,31 @@ input[type= 'text']{
     margin-top: 3.5rem;
 }
 
-.well{
-    background-color: #f1f1f1;
+.bookmarked-output{
+    /* background-color: #f1f1f1; */
+    display: flex;
+    line-height: 3rem;
+    padding-left: 3rem; 
+}
+
+.well > a{
+    margin-left: 2rem;
+}
+
+.visit-btn{
+    text-decoration: none;
+    background-color: green;
+    margin-bottom: 2rem;
+    color: #fff;
+    padding: 0 40px;
+    border-radius: 5px;
+}
+
+.delete-btn{
+    text-decoration: none;
+    background-color: red;
+    margin-bottom: 2rem;
+    color: #fff;
+    padding: 0 40px;
+    border-radius: 5px;
 }
