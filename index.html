@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="fetchBookmarks()">
     
     <section class="container">
         <nav>
@@ -18,17 +18,19 @@
         <main class="main">
             <h1>Bookmark Your Favorite Sites</h1>
             <form class="form">
-                <label class="site-name ">Site Name</label>
-                <input type="text">
+                <label class="site-name">Site Name</label>
+                <input type="text" class="siteName">
                 <label class="site-url">Site URL</label>
-                <input type="text">
+                <input type="text" class="siteUrl">
                 <button class="btn">Bookmark</button>
             </form>
             
+    <div class="bookmarkResult">
+            
+        </div>
         </main>
-
+        
     </section>
-
 
 
 
