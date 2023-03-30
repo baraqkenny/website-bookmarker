@@ -1,12 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     margin: 0;
     font-family: sans-serif;
 }
 
-/* .container{
-    width: 100%;
-    height: 100vh;   
-} */
 
 nav {
     margin: 2rem;
@@ -14,6 +12,7 @@ nav {
 nav > h1{
     font-size: 2rem;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .main{
@@ -29,6 +28,7 @@ nav > h1{
 .main > h1{
     text-align: center;
     padding-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Form Styling */
@@ -42,6 +42,7 @@ nav > h1{
 
 .form > label{
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 input[type= 'text']{
@@ -51,10 +52,12 @@ input[type= 'text']{
     height: 34px;
     border: 2px solid;
     border-radius: 5px;
+    font-size: 15px;
 }
 
 ::placeholder{
     padding-left: 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .site-url{
@@ -72,6 +75,8 @@ input[type= 'text']{
     background-color: blue;
     border: none;
     font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     border-radius: 5px;
 }
 
@@ -80,19 +85,20 @@ input[type= 'text']{
 }
 
 .bookmarked-output{
-    /* background-color: #f1f1f1; */
     display: flex;
     line-height: 3rem;
-    padding-left: 3rem; 
+    padding-left: 10rem; 
+    font-family: 'Montserrat', sans-serif;
 }
 
-.well > a{
+.bookmarked-output > a{
     margin-left: 2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .visit-btn{
     text-decoration: none;
-    background-color: green;
+    background-color: rgb(15, 216, 15);
     margin-bottom: 2rem;
     color: #fff;
     padding: 0 40px;
@@ -109,7 +115,7 @@ input[type= 'text']{
 }
 
 
-/* Adding Responsiveness to the website with Media queries */
+/* Responsiveness to the website with Media queries */
 
 @media(max-width: 770px){
     .main{
@@ -141,6 +147,8 @@ input[type= 'text']{
     border: none;
     font-size: 17px;
     border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 }
@@ -177,6 +185,8 @@ input[type= 'text']{
     border: none;
     font-size: 17px;
     border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 }
 
@@ -212,6 +222,8 @@ input[type= 'text']{
     border: none;
     font-size: 17px;
     border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 }
 
@@ -247,6 +259,8 @@ input[type= 'text']{
     border: none;
     font-size: 17px;
     border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }  
 
 }
@@ -283,7 +297,23 @@ input[type= 'text']{
     border: none;
     font-size: 17px;
     border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }   
+.delete-btn{
+    text-decoration: none;
+    background-color: red;
+    margin-bottom: 2rem;
+    color: #fff;
+    padding: 0 25px;
+    border-radius: 5px;
+}
+.bookmarked-output{
+    display: flex;
+    line-height: 3rem;
+    padding-left: 2rem; 
+    font-family: 'Montserrat', sans-serif;
+}
 
 }
 
@@ -319,7 +349,14 @@ input[type= 'text']{
     border: none;
     font-size: 17px;
     border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }   
-
+.bookmarked-output{
+    display: flex;
+    line-height: 3rem;
+    padding-left: 1rem; 
+    font-family: 'Montserrat', sans-serif;
+}
 
 }
