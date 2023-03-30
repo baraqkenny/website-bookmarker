@@ -2,7 +2,8 @@
 
 *{
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 
@@ -12,7 +13,6 @@ nav {
 nav > h1{
     font-size: 2rem;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .main{
@@ -28,7 +28,6 @@ nav > h1{
 .main > h1{
     text-align: center;
     padding-top: 2rem;
-    font-family: 'Montserrat', sans-serif;
 }
 
 /* Form Styling */
@@ -42,7 +41,6 @@ nav > h1{
 
 .form > label{
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
 }
 
 input[type= 'text']{
@@ -57,7 +55,6 @@ input[type= 'text']{
 
 ::placeholder{
     padding-left: 1rem;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .site-url{
@@ -75,10 +72,11 @@ input[type= 'text']{
     background-color: blue;
     border: none;
     font-size: 17px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     border-radius: 5px;
+    cursor: pointer;
 }
+
 
 .bookmarkResult{
     margin-top: 3.5rem;
@@ -87,13 +85,11 @@ input[type= 'text']{
 .bookmarked-output{
     display: flex;
     line-height: 3rem;
-    padding-left: 10rem; 
-    font-family: 'Montserrat', sans-serif;
+    padding-left: 4rem;
 }
 
 .bookmarked-output > a{
     margin-left: 2rem;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .visit-btn{
@@ -114,7 +110,55 @@ input[type= 'text']{
     border-radius: 5px;
 }
 
+/* Popup Messsage */
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
 
+.popup h2{
+    background-color: red;
+    color: #fff;
+    display: inline-flex;
+    padding: 20px 30px;
+    border-radius: 50%;
+    margin-top: -50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.popup p{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0 30px;
+}
+
+.popup .pop-btn{
+    width: 100%;
+    padding: 10px 0;
+    background: red;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
 /* Responsiveness to the website with Media queries */
 
 @media(max-width: 770px){
@@ -147,8 +191,6 @@ input[type= 'text']{
     border: none;
     font-size: 17px;
     border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
 }
 
 }
@@ -185,8 +227,6 @@ input[type= 'text']{
     border: none;
     font-size: 17px;
     border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
 }
 }
 
@@ -222,8 +262,6 @@ input[type= 'text']{
     border: none;
     font-size: 17px;
     border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
 }
 }
 
@@ -259,8 +297,6 @@ input[type= 'text']{
     border: none;
     font-size: 17px;
     border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
 }  
 
 }
@@ -297,8 +333,6 @@ input[type= 'text']{
     border: none;
     font-size: 17px;
     border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
 }   
 .delete-btn{
     text-decoration: none;
@@ -312,7 +346,6 @@ input[type= 'text']{
     display: flex;
     line-height: 3rem;
     padding-left: 2rem; 
-    font-family: 'Montserrat', sans-serif;
 }
 
 }
@@ -349,14 +382,24 @@ input[type= 'text']{
     border: none;
     font-size: 17px;
     border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
 }   
 .bookmarked-output{
     display: flex;
     line-height: 3rem;
-    padding-left: 1rem; 
-    font-family: 'Montserrat', sans-serif;
+    padding-left: 1rem;
 }
 
+.popup{
+    width: 100px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden
+}
 }

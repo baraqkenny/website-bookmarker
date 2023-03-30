@@ -1,4 +1,5 @@
 const submitBookmark = document.querySelector('.form');
+const popup = document.querySelector(".popup");
 
 submitBookmark.addEventListener('submit', (e)=> {
     e.preventDefault();
@@ -83,20 +84,29 @@ function fetchBookmarks(){
     // Validate Form
     function validateForm(siteName, siteUrl){
          if (!siteName || !siteUrl) {
-           alert("please fill in the form");
-           return false;
+        // Add the popup modal
+        popup.classList.add("open-popup");
+       return false;
+
          }
 
-         const expression =
-           /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
+         const expression = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
          const regex = new RegExp(expression);
 
          if (!siteUrl.match(regex)) {
-           alert("Please use a valid URL");
+       // Changed the original innerText  
+        const popUpText = document.querySelector('.popup-text');
+        popUpText.textContent = 'Please input a valid URL'
+         popup.classList.add("open-popup");
            return false;
          }
 
          return true;
     }
 
+    // Remove the popup modal
+    const popUpBtn = document.querySelector('.pop-btn');
+    popUpBtn.addEventListener('click', ()=>{
+        popup.classList.remove("open-popup");
+    })
    
